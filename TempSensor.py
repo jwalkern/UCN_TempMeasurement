@@ -6,11 +6,10 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(17, GPIO.IN)
 
 promt = ""
-while promt != 'q':
-    promt = input("tast 'q' for quit: ")
+for i in range(10):
     data = GPIO.input(17)
     print(data)
-    time.sleep(1)
+    time.sleep(0.1)
 GPIO.cleanup()
 
 
