@@ -35,7 +35,7 @@ def init_ADC(SSn=0):
 
 try:
     adc = init_ADC(1)  # angiv det rigtige slave slect nummer
-    adc2 = init_ADC(2)
+    adc2 = init_ADC(1)
 
     while True:
         value2 = read_ADC((adc2, 0, 0))
