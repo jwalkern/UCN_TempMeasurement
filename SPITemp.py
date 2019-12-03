@@ -29,8 +29,12 @@ try:
     adc = init_ADC(1)  # angiv det rigtige slave slect nummer
 
     while True:
-        data = read_ADC(adc,0,0)
-        print(data)  # tilføj manglende argumenter
+        value = read_ADC(0)
+        volts = (value*5)/1024
+        temp = volts/ (10.0 / 1000)
+        print("%4d/1023 => %5.3f V => %4.1f Grader." % (value, volts, temp))
+        #data = read_ADC(adc,0,0)
+        #print(data)  # tilføj manglende argumenter
 
         sleep(0.5)
 except KeyboardInterrupt:
