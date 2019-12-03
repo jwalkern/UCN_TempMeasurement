@@ -38,8 +38,8 @@ try:
     adc2 = init_ADC(1)
 
     while True:
-        value2 = read_ADC((adc2, 0, 0))
-        value = read_ADC2(adc,0,0)
+        value2 = read_ADC2(adc2, 0, 0)
+        value = read_ADC(adc,0,0)
         volts2 = (value2*5)/1024
         volts = (value*5)/1024
         temp2 = volts2/ (10.0 / 1000)
