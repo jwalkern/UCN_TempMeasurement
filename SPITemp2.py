@@ -52,7 +52,7 @@ try:
         templogging(temp2, temp)
         jsonlogging(templogging(temp2, temp))
 
-        sleep(5)
+        sleep(10)
 
 except KeyboardInterrupt:
     exit()

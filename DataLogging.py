@@ -13,9 +13,3 @@ def jsonlogging(SensorData):
     with open(filNavn, "a") as filObject:
         json.dump(SensorData, filObject,)
         filObject.write('\n')
-
-
-
-test = templogging(21,23)
-jsonlogging(test)
-print(test)
