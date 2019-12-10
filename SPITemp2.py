@@ -46,9 +46,6 @@ try:
         temp = volts/ (10.0 / 1000)
         print("Rør temp: %4d/1023 => %5.3f V => %4.1f Grader." % (value, volts, temp) + "Rum temp: %4d/1023 => %5.3f V => %4.1f Grader." %(value2, volts2, temp2))
 
-        #data = read_ADC(adc,0,0)
-        #print(data)  # tilføj manglende argumenter
-
         sleep(0.5)
 except KeyboardInterrupt:
     exit()
