@@ -49,8 +49,8 @@ try:
 
 
         #Tester de nye logging funktioner
-        templogging(temp, temp2)
-        jsonlogging(templogging(temp, temp2))
+        templogging(temp2, temp)
+        jsonlogging(templogging(temp2, temp))
 
         sleep(5)
 
