@@ -46,10 +46,14 @@ try:
         temp2 = volts2/ (10.0 / 1000)
         temp = volts/ (10.0 / 1000)
         print("Rør temp: %4d/1023 => %5.3f V => %4.1f Grader." % (value, volts, temp) + "Rum temp: %4d/1023 => %5.3f V => %4.1f Grader." %(value2, volts2, temp2))
-        sleep(5)
+
+
+        #Tester de nye logging funktioner
         templogging(temp, temp2)
         jsonlogging(templogging(temp, temp2))
-        
+
+        sleep(5)
+
 except KeyboardInterrupt:
     exit()
 
