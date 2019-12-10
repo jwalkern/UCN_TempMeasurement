@@ -46,7 +46,7 @@ try:
         temp2 = volts2/ (10.0 / 1000)
         temp = volts/ (10.0 / 1000)
         #print("Rør temp: %4d/1023 => %5.3f V => %4.1f Grader." % (value2, volts2, temp2) + "Rum temp: %4d/1023 => %5.3f V => %4.1f Grader." %(value, volts, temp))
-        print('Rør temp: ' + temp2 + ' grader. // Rum temp: ' + temp + ' grader.')
+        print('Rør temp: ' + str(temp2) + ' grader. // Rum temp: ' + str(temp) + ' grader.')
 
         #Tester de nye logging funktioner
         templogging(temp2, temp)
