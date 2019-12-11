@@ -49,7 +49,6 @@ try:
         print('Rør temp: ' + str(temp2) + ' grader. // Rum temp: ' + str(temp) + ' grader.')
 
         #Tester de nye logging funktioner
-        templogging(temp2, temp)
         jsonlogging(templogging(temp2, temp))
 
         sleep(10)
