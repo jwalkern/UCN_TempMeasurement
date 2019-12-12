@@ -1,5 +1,6 @@
 from time import sleep
 from DataLogging import *
+from ThingspeakCommunication import *
 import spidev
 
 
@@ -50,8 +51,10 @@ try:
 
         #Tester de nye logging funktioner
         jsonlogging(templogging(temp2, temp))
+        #Tester thingspeak kommunikation
+        thingSpeakTransfer(temp2, temp, time.strftime("%d/%m/%Y, %H:%M:%S", time.localtime()))
 
-        sleep(10)
+        sleep(5)
 
 except KeyboardInterrupt:
     exit()
