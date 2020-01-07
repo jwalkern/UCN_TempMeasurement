@@ -8,9 +8,10 @@ def read_ADC(ADC, channel, vref):
     """
     Aflæser ADCen og returnerer resultatet
     """
+    channel = 0b11000000
 
     # skriv her koden der er nødvendig for at læse fra den angivne kanal 'channel' og reference spænding
-    svar = ADC.xfer2([1,0b11000000, 0])
+    svar = ADC.xfer2([1,channel, 0])
     return ((svar[1]&3) << 8)+svar[2] # returner den læsete værdi
 
 def read_ADC2(ADC, channel, vref):
