@@ -56,6 +56,8 @@ while running:
     
     roomTemp  = round(aws.readADC(MCP3008,roomTempChannel,vref),1)
     pipeTemp  = round(aws.readADC(MCP3008,pipeTempChannel,vref),1)
+    print(roomTemp)
+    print(pipeTemp)
     
     aws.thingSpeakTransfer(channelID, writeKey, roomTemp, pipeTemp)
     
