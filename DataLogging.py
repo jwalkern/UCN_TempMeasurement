@@ -13,10 +13,9 @@ def templogging(temp_room, temp_target):
 
 def jsonlogging(SensorData):
     # Adds data to the file object, if the file doesn't exist, then it's created.
-    filNavn = "tempdata3.json"
+    filNavn = "bulk_update.json"
     with open(filNavn, "a") as filObject:
         json.dump(SensorData, filObject, )
-        filObject.write('\n')
+        #filObject.write('\n')
 
 
-jsonlogging(templogging(21.32568, 22.548965))
